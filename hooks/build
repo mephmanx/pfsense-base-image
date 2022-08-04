@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+echo "------ HOOK START - BUILD -------"
+
+docker build --build-arg PFSENSE_VERSION=$PFSENSE_VERSION_NUM -t $IMAGE_NAME .
+
+echo "------ HOOK END - BUILD -------"
